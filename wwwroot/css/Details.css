@@ -1,0 +1,88 @@
+.RecipeMain{
+    display:flex;
+    flex-flow:column wrap;
+    gap:20px;
+    overflow:hidden;
+    padding-top:40px;
+
+}
+
+
+.RecipeUp{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+    width:100vw;
+    gap:50px;
+}
+
+.RecipeImage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RecipeImg{
+    border-radius: 4px;
+}
+
+
+.RecipeTags{
+    display: flex;
+    gap:10px;
+}
+
+.RecipeTag{
+    background-color: white;
+    border:1px solid black;
+    border-radius:2px;
+    padding:5px;
+}
+
+.RecipeDown{
+    display: flex;
+    justify-self: start;
+    align-items: start;
+    flex-flow:column wrap;
+    gap:20px;
+}
+
+.RecipeDesc{
+    display: flex;
+    flex-flow:column wrap;
+    line-height: 150%;
+    justify-content: start;
+    align-items: start;
+    gap:20px;
+    word-spacing: 150%;
+    
+
+}
+
+
+
+.RecipeIngs{
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-flow: column wrap;
+    width: fit-content;
+    gap:30px;
+
+}
+
+.RecipeIngsWrapper{
+    border-radius: 5px;
+    background-color: rgb(242, 241, 241);
+    width: 500px;
+    padding:10px;
+}
+
+
+.Separator{
+    height:1px;
+    width:500px;
+    background-color: rgb(231, 228, 228);
+
+}

@@ -1,0 +1,58 @@
+@model RecipeApp.Models.Recipe
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+ <head>
+    <link href="~/css/Details.css" rel="stylesheet">
+    </head>
+
+<div class="RecipeMain">
+   
+   <div class="RecipeUp">
+        <div class = "RecipeImage">
+            <img class="RecipeImg" src="@Model.Image"/>
+
+        </div>
+
+        <div class="RecipeTitle">
+         <h4>@Model.Title</h4>
+         </div>
+
+           <div class = "RecipeTags">
+            @foreach(var i in @Model.Tags){
+                <div class="RecipeTag">@i</div>
+            }
+        </div>
+
+        </div>
+        <div class="RecipeDown">
+        <div class = "RecipeIngs">
+            <h3>Ingredients</h3>
+            <div class="RecipeIngsWrapper">
+            @for(int i = 0;i<@Model.Ingredients.Length;i++){
+                <div class="Ingredient">
+                    <li>@Model.Ingredients[i]</li>
+
+                </div>
+            }
+            </div>
+        </div>
+        <p class="Separator"></p>
+        
+        <div class = "RecipeDesc">
+             <h3>Description</h3>
+           @Model.Description
+        </div>
+        
+     
+        
+      
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

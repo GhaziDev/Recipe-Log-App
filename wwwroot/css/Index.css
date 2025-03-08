@@ -1,0 +1,140 @@
+.create{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:greenyellow;
+    color:white;
+    padding:5px;
+    border-radius:4px;
+    width:120px;
+    height:55px;
+    cursor:pointer;
+    transition: all 0.16s ease-out;
+
+}
+
+.create:hover{
+    transform:scale(0.9);
+}
+
+.page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+   
+}
+
+.header{
+    display:flex;
+    flex-flow:column wrap;
+    gap:15px;
+    align-items: center;
+    padding:50px;
+}
+.main{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+    padding-left:20px;
+    padding-right:20px;
+    gap:40px;
+
+}
+
+.box{
+    box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+    border-radius:4px;
+
+    display:flex;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content: start;
+    height:350px;
+    width:250px;
+    cursor:pointer;
+    transition: all 0.15s ease-in-out;
+
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
+
+.box:hover{
+    transform:scale(0.97);
+}
+
+.img{
+    width:250px;
+}
+.img img{
+    height:120px;
+    width:100%;
+    object-fit: cover;
+    border-radius:4px;
+}
+
+.tags{
+    display: flex;
+    gap:5px;
+    padding:10px;
+    justify-content: center;
+}
+
+.tag{
+    background-color: transparent;
+    padding:4px;
+    border:1px solid black;
+    border-radius: 4px;
+    border-color:black;
+    color:black;
+    font-size: 12px;
+
+}
+
+.date{
+    display:flex;
+    padding:5px;
+    justify-content: center;
+    width:inherit;
+    color:rgb(171, 164, 164);
+    font-size:12px;
+
+}
+
+
+
+
+
+.crud{
+    display: flex;
+    gap:5px;
+}
+
+.crud a{
+    background-color: rgb(231, 228, 228);
+    border-radius: 2px;
+    padding:3px;
+    cursor: pointer;
+    transition:all 0.15s ease-in-out;
+    font-size: 12px;
+
+}
+
+.crud #edit:hover{
+    transform:scale(0.95);
+    background-color: rgb(199, 192, 192);
+}
+
+.crud #delete:hover{
+    transform:scale(0.95);
+    background-color: rgb(254, 113, 113);
+
+}
+
+

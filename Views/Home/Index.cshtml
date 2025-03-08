@@ -1,0 +1,70 @@
+@model IEnumerable<RecipeApp.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<head>
+    <link href="~/css/Index.css" rel="stylesheet">
+    </head>
+
+
+
+    <div class="page">
+        <div class="header">
+       <h1>Recipe Log</h1>
+
+
+    <div  class="create">
+    <a asp-action="Create">Create New</a>
+</div>
+</div>
+
+
+<div class="main">
+
+
+
+@foreach (var item in Model) {
+<a asp-action="Details" asp-route-id="@item.Id">
+            <div   class="box">
+                <div class="img">
+                 <img src="@item.Image"/>
+                </div>
+            
+            <div class="title">
+                 <h3>@item.Title</h3>
+               
+            </div>
+
+            <div class="tags">
+                @for(int i =0;i<item.Tags.Length;i++){
+                    <div class="tag">
+                        @item.Tags[i]
+
+                    </div>
+
+                }
+            </div>
+            
+            
+            <div class="crud">
+                <a asp-action="Edit" asp-route-id="@item.Id" id="edit">Edit</a>|
+                <a asp-action="Delete" asp-route-id="@item.Id" id="delete">Delete</a>
+       
+            </div>
+
+            
+            <div class="date">
+                @item.PublishDate
+            </div>
+
+            </div>
+</a>
+       
+}
+   
+
+    </div>
+    </div>
